@@ -4,7 +4,6 @@ import {BloomFilter} from 'bloom-filter-js';
 
 console.log(getFingerprint('oauth.googleusercontent.com/gadgets/js/core:rpc:shindig.random:shindig.sha1.js?c=2'));
 
-
 function discoverMatchingPrefix(bloomFilter, str, prefixLen = 8) {
   if (!bloomFilter.substringExists(str, prefixLen)) {
     console.log('no substring exists for url:', str);
